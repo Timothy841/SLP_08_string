@@ -10,7 +10,7 @@ int mystrlen(char *s){
 
 char * mystrcpy(char *dest, char *source){
 	int i = 0;
-	while (*dest!=0 || *source!=0){
+	while (*source!=0){
 		i++;
 		dest++;
 		source++;
