@@ -29,13 +29,11 @@ char * mystrncpy(char *dest, char *source, int n){
 	int k = n;
 	int j = 0;
 	while (n){
-		if (!*dest){
-			return dest-j;
-		}
 		if (*source){
 			*dest = *source;
 		}
 		else{
+		printf("s");
 			return dest-j;
 		}
 		dest++;
@@ -43,7 +41,10 @@ char * mystrncpy(char *dest, char *source, int n){
 		n--;
 		j++;
 	}
-	return dest-k;
+	*(dest++) = 0;
+	//printf("%d\n",*(dest-k));
+	printf("7");
+	return dest-k-1;
 }
 
 char * mystrcat(char *dest, char *source){

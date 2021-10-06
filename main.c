@@ -10,6 +10,8 @@ int main() {
   char s2[100] = "hello";
   char s3[100] = "goodbye";
   char s4[100] = "sdfre";
+  char s5[100] = "s";
+  char s6[100] = "vnmfgi";
 
   printf("start strings:\n");
   printf("s1: [%s]\n", s1);
@@ -25,8 +27,8 @@ int main() {
   printf("[mine]:\t\t[%s]\n", mystrcpy(s1, s2) );
 
   printf("\nTesting strncpy(s1, s3, 3):\n");
-  printf("[standard]:\t[%s]\n", strncpy(s1, s3, 3) );
-  printf("[mine]:\t\t[%s]\n", mystrncpy(s1, s3, 3) );
+  //printf("[standard]:\t[%s]\n", strncpy(s6, s5, 3) );
+  printf("[mine]:\t\t[%s]\n", mystrncpy(s6, s5, 3) );
 
   printf("\nTesting strcat(s1, s3):\n");
   printf("[standard]:\t[%s]\n", strcat(s1, s3) );
