@@ -31,7 +31,6 @@ char * mystrncpy(char *dest, char *source, int n){
 	while (i!=n){
 		if (i>len){
 			*(dest++) = 0;
-			printf("2");
 		}
 		else{
 			*(dest++) = *(source++);
