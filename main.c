@@ -27,8 +27,8 @@ int main() {
   printf("[mine]:\t\t[%s]\n", mystrcpy(s1, s2) );
 
   printf("\nTesting strncpy(s1, s3, 3):\n");
-  //printf("[standard]:\t[%s]\n", strncpy(s6, s5, 3) );
-  printf("[mine]:\t\t[%s]\n", mystrncpy(s6, s5, 3) );
+  printf("[standard]:\t[%s]\n", strncpy(s1, s3, 3) );
+  printf("[mine]:\t\t[%s]\n", mystrncpy(s1, s3, 3) );
 
   printf("\nTesting strcat(s1, s3):\n");
   printf("[standard]:\t[%s]\n", strcat(s1, s3) );

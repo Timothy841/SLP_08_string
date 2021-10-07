@@ -26,25 +26,18 @@ char * mystrcpy(char *dest, char *source){
 }
 
 char * mystrncpy(char *dest, char *source, int n){
-	int k = n;
-	int j = 0;
-	while (n){
-		if (*source){
-			*dest = *source;
+	int i = 0;
+	int len = mystrlen(source);
+	while (i!=n){
+		if (i>len){
+			*(dest++) = 0;
 		}
 		else{
-		printf("s");
-			return dest-j;
+			*(dest++) = *(source++);
 		}
-		dest++;
-		source++;
-		n--;
-		j++;
+		i++;
 	}
-	*(dest++) = 0;
-	//printf("%d\n",*(dest-k));
-	printf("7");
-	return dest-k-1;
+	return dest-n;
 }
 
 char * mystrcat(char *dest, char *source){
